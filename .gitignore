@@ -2,3 +2,5 @@
 __pycache__
 NumerosTelefone.pdf
 .idea
+.idea/*
+.idea/workspace.xml
