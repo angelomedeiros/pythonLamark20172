@@ -1,5 +1,6 @@
 from Strings.AbrirArquivo import dicionarioConvidados
 from Pdf import GerarPdf
+from Email import EnviarEmail
 
 # Armazena os dados na variável convidados
 convidados = open("convidados.txt", "r")
@@ -11,4 +12,7 @@ dicionario = dicionarioConvidados(convidados)
 GerarPdf.pdf(dicionario)
 
 # Imprime o dicionário na saída padrão
-print(dicionario)
+print("Dicionário com os contatos: {}".format(dicionario))
+
+EnviarEmail.enviarEmail()
+
