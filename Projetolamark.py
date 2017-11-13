@@ -1,4 +1,4 @@
-from Strings.AbrirArquivo import dicionarioConvidados
+from Dados.ColetarDados import dicionarioConvidados
 from Pdf import GerarPdf
 from Email import EnviarEmail
 
@@ -14,5 +14,5 @@ GerarPdf.pdf(dicionario)
 # Imprime o dicionário na saída padrão
 print("Dicionário com os contatos: {}".format(dicionario))
 
-EnviarEmail.enviarEmail()
-
+# Envia o email e mostra o status do envio!
+EnviarEmail.enviarEmail(dicionario)

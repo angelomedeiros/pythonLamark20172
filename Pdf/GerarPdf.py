@@ -1,7 +1,8 @@
 from reportlab.pdfgen import canvas
 
 def pdf(dicionario):
-    c = canvas.Canvas("NumerosTelefone.pdf")
+    pdfName = "NumerosTelefone.pdf"
+    c = canvas.Canvas(pdfName)
 
     c.setFont('Times-Bold', 12) # Configura a fonte para negrito
     c.drawString(100, 780, "Nomes e telefones") # Título do conteúdo do PDF
@@ -15,3 +16,5 @@ def pdf(dicionario):
         h0 -= 15 # Distância entrelinha
 
     c.save() # Salva documento
+
+    return pdfName
