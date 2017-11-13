@@ -48,9 +48,11 @@ subject = 'Assunto' # Altere o assunto
 body = 'Conteudo' # Altere o conteúdo
 ```
 
-## **Avisos:**
+## **Avisos e observações:**
 
 
 * O arquivo que a aplicação ler é o arquivo "convidados.txt", então se você renomear esse arquivo você deve alterar no script também;
 
-* O arquivo que a aplicação lê tem que ter a estrutura semelhante ao do arquivo "convidados.txt".
+* O arquivo que a aplicação lê tem que ter a estrutura semelhante ao do arquivo "convidados.txt";
+
+* O arquivo pdf é gerado na raiz do projeto.
